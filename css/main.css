@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.product-grid img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.selected-products {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.selected-products h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.selected-products ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selected-products li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.selected-products li span {
+  flex-basis: 70%;
+}
+
+.selected-products li button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#total-price-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selected-products #total-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
